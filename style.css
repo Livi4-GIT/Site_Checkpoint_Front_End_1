@@ -35,19 +35,26 @@ h1{
     border-radius: var(--profile-border-radius-circle);
     margin-inline: 80px;
     margin-block: 10px;
-}
 
-#textoCard{
-    background-color: #495d2c;
-    border-radius: var(--profile-border-radius-circle);
-
+        display: flex;             /* Deixa os itens lado a lado */
+        align-items: center;       /* Alinha o texto e a imagem verticalmente no centro */
+        gap: 15px;      
 }
 
 img{
     border-radius: var(--profile-border-radius-circle);
     margin-inline: 10px;
     margin-block: 10px;
+} 
+
+
+/* #textoCard{
+    background-color: #495d2c;
+    border-radius: var(--profile-border-radius-circle);
+
 }
+
+
 
 
 /* aqui criamos todas as variáveis que serão usadas na página
