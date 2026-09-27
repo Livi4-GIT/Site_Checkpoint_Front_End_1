@@ -11,6 +11,8 @@
     --color-page-details-sweet-caramel-500: #cdad67;
     
     --profile-border-radius-circle: 50px;
+
+    --font-family-titles: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 * {
@@ -25,36 +27,92 @@ body{
 
 h1{
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--font-family-titles);
 }
 
 .blocoPrincipal{
+    transition: .5s;
     padding: 15px;
-    background-color: var(--color-page-green-olive-400);
+    background-color: var(--color-page-green-olive-800);
     border-color: #495d2c;
     border-radius: var(--profile-border-radius-circle);
     margin-inline: 80px;
     margin-block: 10px;
 
-        display: flex;             /* Deixa os itens lado a lado */
-        align-items: center;       /* Alinha o texto e a imagem verticalmente no centro */
-        gap: 15px;      
+    display: flex;             /*  deixa os blocos da div livres para que possamos montar um ao lado do outro*/
+    align-items: center;       /* alinhando os textos e a imagem para ficarem um do lado do outro*/
+    gap: 15px;      /*o espaçamento entre um item e poutro */
 }
 
 img{
     border-radius: var(--profile-border-radius-circle);
     margin-inline: 10px;
     margin-block: 10px;
+
+    width: 800px;
+    height: 600px;
 } 
 
 
-/* #textoCard{
-    background-color: #495d2c;
-    border-radius: var(--profile-border-radius-circle);
+#textoCard{
+    background-color: var(--color-page-green-olive-600);
+    border-radius: 25px;
+    padding: 15px;
+}
+
+h2{
+    margin-block: 5px;
+    padding-block: 5px;
+    text-align: center;
+    font-family: var(--font-family-titles);
 
 }
 
+ul{
+    padding: 10px;
+    background-color: var(--color-page-green-olive-800);
+    border-color: #495d2c;
+    border-radius: var(--profile-border-radius-circle);
+    margin-inline: 10px;
+    margin-block: 10px;
 
+    &:hover {
+        background-color: var(--color-page-details-sweet-caramel-400);
+
+        a {
+            color:var( --color-page-green-olive-800);
+        }
+    }
+}
+
+
+li {
+    background-color: var(--color-grey-700);
+    margin-block: 10px;
+    padding-block: 10px;
+    border-radius: 10px;
+
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+h3{
+    text-align: center;
+    margin-block: 5px;
+    padding-block: 5px;
+}
+
+p{
+    text-align: center;
+    margin-block: 5px;
+    padding-block: 5px;
+
+    font-size: larger;
+}
 
 
 /* aqui criamos todas as variáveis que serão usadas na página
